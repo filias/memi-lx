@@ -34,7 +34,7 @@ def deploy():
         return "not main", 200
 
     subprocess.Popen(
-        ["bash", "-c", "cd /opt/memi-lx && git pull && uv sync && systemctl restart memi-lx"],
+        ["bash", "-c", "sudo -u memi bash -c 'cd /opt/memi-lx && git pull && uv sync' && systemctl restart memi-lx"],
     )
     return "deploying", 200
 
