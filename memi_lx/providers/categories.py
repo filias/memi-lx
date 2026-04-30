@@ -14,6 +14,7 @@ from memi_lx.categories.monumentos import (
     FREGUESIAS as MONUMENT_FREGUESIAS,
 )
 from memi_lx.categories.freguesias import FREGUESIAS, MAPS as FREGUESIA_MAPS
+from memi_lx.categories.bairros import BAIRROS, WIKIPEDIA as BAIRRO_WIKI
 
 
 class MetroProvider(CategoryProvider):
@@ -57,6 +58,17 @@ class FreguesiasProvider(CategoryProvider):
         return None
 
 
+class BairrosProvider(CategoryProvider):
+    key = "geografia:bairros"
+    items = BAIRROS
+    override_name = True
+
+    def get_image(self, item):
+        wiki = BAIRRO_WIKI.get(item, item)
+        return images.get_wikipedia_image(wiki)
+
+
 register(MetroProvider())
 register(MonumentsProvider())
 register(FreguesiasProvider())
+register(BairrosProvider())
