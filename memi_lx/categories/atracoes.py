@@ -1,11 +1,11 @@
-"""Iconic neighbourhoods, squares and zones of Lisbon.
+"""Atrações: iconic Lisbon places, buildings, museums, parks and zones.
 
-These are the traditional bairros and praças that don't always map 1:1 to a
-freguesia (e.g. Alfama is part of Santa Maria Maior, Chiado is part of
-Misericórdia).
+Includes traditional bairros (Alfama, Chiado, Bairro Alto), historic
+squares (Rossio, Restauradores), modern landmarks (MEO Arena, Torre
+Vasco da Gama), parks (Monsanto) and museums.
 """
 
-BAIRROS = [
+ATRACOES = [
     "Alfama",
     "Bairro Alto",
     "Chiado",
@@ -19,6 +19,11 @@ BAIRROS = [
     "Largo de Camões",
     "Monsanto",
     "Torre Vasco da Gama",
+    "MEO Arena",
+    "Fundação Calouste Gulbenkian",
+    "Casa Fernando Pessoa",
+    "Casa-Museu Dr. Anastácio Gonçalves",
+    "Museu da Carris",
 ]
 
 # Map to English Wikipedia article titles (where the bare name doesn't resolve)
@@ -30,4 +35,6 @@ WIKIPEDIA = {
     "Largo de Camões": "Praça Luís de Camões",
     "Monsanto": "Monsanto Forest Park",
     "Torre Vasco da Gama": "Vasco da Gama Tower",
+    "Fundação Calouste Gulbenkian": "Calouste Gulbenkian Museum",
+    "Museu da Carris": "Carris Museum",
 }

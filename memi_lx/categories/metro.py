@@ -12,6 +12,8 @@ STATIONS = [
     "Telheiras", "Lumiar", "Quinta das Conchas", "Amadora Este",
     "Alfornelos", "Pontinha", "Carnide", "Colégio Militar",
     "Alto dos Moinhos", "Picoas",
+    "Reboleira", "Odivelas", "Senhor Roubado", "Ameixoeira",
+    "Alvalade", "Roma", "Areeiro",
 ]
 
 # Wikimedia Commons filenames with station art/architecture photos
@@ -59,6 +61,13 @@ COMMONS_FILES = {
     "Colégio Militar": "Metro station Lisboa Lisbon Colegio Militar Luz Metro logo.jpg",
     "Alto dos Moinhos": "Metro Lisboa Alto dos Moinhos.jpg",
     "Picoas": "Picoas entrance.jpg",
+    "Reboleira": "Metropolitano de Lisboa - Reboleira.jpg",
+    "Odivelas": "Metro Lisboa Lisbon Odivelas station.jpg",
+    "Senhor Roubado": "Metro Lisboa Lisbon Senhor Roubado station.jpg",
+    "Ameixoeira": "Metro Lisboa Lisbon Ameixoeira station.jpg",
+    "Alvalade": "Metro Lisboa Alvalade.jpg",
+    "Roma": "Metro Lisboa Roma 1.jpg",
+    "Areeiro": "Entrada do Metro na Praça do Areeiro, Lisboa, Portugal.jpg",
 }
 
 # Metro lines
@@ -106,4 +115,11 @@ LINES = {
     "Colégio Militar": "Azul",
     "Alto dos Moinhos": "Azul",
     "Picoas": "Amarela",
+    "Reboleira": "Azul",
+    "Odivelas": "Amarela",
+    "Senhor Roubado": "Amarela",
+    "Ameixoeira": "Amarela",
+    "Alvalade": "Verde",
+    "Roma": "Verde",
+    "Areeiro": "Verde",
 }
