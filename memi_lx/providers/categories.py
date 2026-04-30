@@ -13,11 +13,7 @@ from memi_lx.categories.monumentos import (
     WIKIPEDIA as MONUMENT_WIKI,
     FREGUESIAS as MONUMENT_FREGUESIAS,
 )
-from memi_lx.categories.freguesias import (
-    FREGUESIAS,
-    WIKIPEDIA as FREGUESIA_WIKI,
-    MAP_FILES as FREGUESIA_MAPS,
-)
+from memi_lx.categories.freguesias import FREGUESIAS, MAPS as FREGUESIA_MAPS
 
 
 class MetroProvider(CategoryProvider):
@@ -55,13 +51,10 @@ class FreguesiasProvider(CategoryProvider):
     override_name = True
 
     def get_image(self, item):
-        map_file = FREGUESIA_MAPS.get(item)
-        if map_file:
-            result = images.get_wikipedia_file_image(map_file)
-            if result and result.get("image"):
-                return result
-        wiki = FREGUESIA_WIKI.get(item, item)
-        return images.get_wikipedia_image(wiki)
+        url = FREGUESIA_MAPS.get(item)
+        if url:
+            return {"name": item, "image": url}
+        return None
 
 
 register(MetroProvider())

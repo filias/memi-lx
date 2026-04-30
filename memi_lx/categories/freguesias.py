@@ -27,34 +27,31 @@ FREGUESIAS = [
     "São Vicente",
 ]
 
-# Map to English Wikipedia article titles
-WIKIPEDIA = {
-    "Ajuda": "Ajuda (Lisbon)",
-    "Alcântara": "Alcântara (Lisbon)",
-    "Alvalade": "Alvalade (Lisbon)",
-    "Areeiro": "Areeiro (Lisbon)",
-    "Arroios": "Arroios (Lisbon)",
-    "Avenidas Novas": "Avenidas Novas",
-    "Beato": "Beato (Lisbon)",
-    "Belém": "Belém (Lisbon)",
-    "Benfica": "Benfica (Lisbon)",
-    "Campo de Ourique": "Campo de Ourique",
-    "Campolide": "Campolide",
-    "Carnide": "Carnide (Lisbon)",
-    "Estrela": "Estrela (Lisbon)",
-    "Lumiar": "Lumiar",
-    "Marvila": "Marvila (Lisbon)",
-    "Misericórdia": "Misericórdia (Lisbon)",
-    "Olivais": "Olivais (Lisbon)",
-    "Parque das Nações": "Parque das Nações (Lisbon)",
-    "Penha de França": "Penha de França (Lisbon)",
-    "Santa Clara": "Santa Clara (Lisbon)",
-    "Santa Maria Maior": "Santa Maria Maior (Lisbon)",
-    "Santo António": "Santo António (Lisbon)",
-    "São Domingos de Benfica": "São Domingos de Benfica",
-    "São Vicente": "São Vicente (Lisbon)",
+# Location maps — parish highlighted within Lisbon. PNGs live in static/freguesias/
+# (sourced from observatorio-lisboa.eapn.pt).
+MAPS = {
+    "Ajuda": "/static/freguesias/ajuda.png",
+    "Alcântara": "/static/freguesias/alcantara.png",
+    "Alvalade": "/static/freguesias/alvalade.png",
+    "Areeiro": "/static/freguesias/areeiro.png",
+    "Arroios": "/static/freguesias/arroios.png",
+    "Avenidas Novas": "/static/freguesias/avenidasnovas.png",
+    "Beato": "/static/freguesias/beato.png",
+    "Belém": "/static/freguesias/belem.png",
+    "Benfica": "/static/freguesias/benfica.png",
+    "Campo de Ourique": "/static/freguesias/campodeourique.png",
+    "Campolide": "/static/freguesias/campolide.png",
+    "Carnide": "/static/freguesias/carnide.png",
+    "Estrela": "/static/freguesias/estrela.png",
+    "Lumiar": "/static/freguesias/lumiar.png",
+    "Marvila": "/static/freguesias/marvila.png",
+    "Misericórdia": "/static/freguesias/misericordia.png",
+    "Olivais": "/static/freguesias/olivais.png",
+    "Parque das Nações": "/static/freguesias/parquedasnacoes.png",
+    "Penha de França": "/static/freguesias/penhadefranca.png",
+    "Santa Clara": "/static/freguesias/santaclara.png",
+    "Santa Maria Maior": "/static/freguesias/santamariamaior.png",
+    "Santo António": "/static/freguesias/santoantonio.png",
+    "São Domingos de Benfica": "/static/freguesias/saodomingosdebenfica.png",
+    "São Vicente": "/static/freguesias/saovicente.png",
 }
-
-# Wikimedia Commons location maps (parish highlighted within Lisbon).
-# Fill these with verified file names to show maps instead of article photos.
-MAP_FILES: dict[str, str] = {}

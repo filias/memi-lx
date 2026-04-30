@@ -1,5 +1,7 @@
 """Memi Lisboa - pratica a tua memória sobre Lisboa."""
 
+import os
+
 from memi_engine import MemiConfig, create_app
 
 # Import providers to register them
@@ -34,7 +36,8 @@ config = MemiConfig(
     label_back="voltar a jogar",
 )
 
-app = create_app(config)
+instance_static = os.path.join(os.path.dirname(__file__), "..", "static")
+app = create_app(config, instance_static=instance_static)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8086)
