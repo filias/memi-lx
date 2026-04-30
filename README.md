@@ -2,7 +2,7 @@
 
 A Lisbon memory card game built on [memi-engine](https://github.com/filias/memi-engine).
 
-Live at [lx.memi.click](https://lx.memi.click)
+Live at [lx.memi.click](https://lx.memi.click). Pushes to `main` auto-deploy via GitHub webhook.
 
 ## Categories
 
