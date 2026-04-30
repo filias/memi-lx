@@ -1,0 +1,13 @@
+[Unit]
+Description=Memi Lisboa
+After=network.target
+
+[Service]
+User=memi
+WorkingDirectory=/opt/memi-lx
+ExecStart=/opt/memi-lx/.venv/bin/gunicorn memi_lx.app:app --bind 127.0.0.1:8086 --workers 2
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
