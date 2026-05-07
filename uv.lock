@@ -293,7 +293,7 @@ wheels = [
 [[package]]
 name = "memi-engine"
 version = "0.1.0"
-source = { git = "https://github.com/filias/memi-engine.git#13aac03e9821780c27ba5d63ce60df8995d308a3" }
+source = { git = "https://github.com/filias/memi-engine.git#4e70bb4cb17e8b529fa87e76359a85d4c7504c57" }
 dependencies = [
     { name = "flask" },
     { name = "requests" },

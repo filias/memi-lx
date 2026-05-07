@@ -10,6 +10,7 @@ import memi_lx.providers  # noqa: F401
 config = MemiConfig(
     title="memi lisboa",
     subtitle="pratica a tua memória",
+    favicon_color="#EE1C25",
     themes=["light", "yellow", "blue", "dark"],
     default_theme="light",
     sponsor_url="https://github.com/sponsors/filias",
