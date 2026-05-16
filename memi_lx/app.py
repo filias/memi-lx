@@ -40,6 +40,7 @@ config = MemiConfig(
     label_click_to_reveal="clica na imagem para revelar a resposta",
     label_click_for_new="clica novamente para outra",
     label_back="voltar a jogar",
+    label_more="saber mais",
 )
 
 instance_static = os.path.join(os.path.dirname(__file__), "..", "static")
