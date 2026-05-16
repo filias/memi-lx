@@ -35,12 +35,12 @@ config = MemiConfig(
             letras &mdash; revela a primeira letra, depois a seguinte, e
             assim por diante. Útil quando o nome está na ponta da
             língua.</li>
-            <li><strong>reportar:</strong> marca uma carta se a imagem não
-            corresponder à resposta (imagem errada, miniatura partida,
-            etc.).</li>
             <li><strong>saber mais:</strong> aparece ao revelar e abre o
             artigo da Wikipédia (ou a página da fonte) do item, para que
             possas ler mais.</li>
+            <li><strong>reportar:</strong> marca uma carta se a imagem não
+            corresponder à resposta (imagem errada, miniatura partida,
+            etc.).</li>
         </ul>
         <p>Podes jogar de duas formas:</p>
         <ul>
