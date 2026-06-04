@@ -1,11 +1,11 @@
-"""Atrações: iconic Lisbon places, buildings, museums, parks and zones.
+"""Attractions: iconic Lisbon places, buildings, museums, parks and zones.
 
 Includes traditional bairros (Alfama, Chiado, Bairro Alto), historic
 squares (Rossio, Restauradores), modern landmarks (MEO Arena, Torre
 Vasco da Gama), parks (Monsanto) and museums.
 """
 
-ATRACOES = [
+ATTRACTIONS = [
     "Alfama",
     "Bairro Alto",
     "Chiado",

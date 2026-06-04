@@ -1,4 +1,4 @@
-"""Memi Lisboa - pratica a tua memória sobre Lisboa."""
+"""Memi Lisboa - practise your memory of Lisbon."""
 
 import os
 

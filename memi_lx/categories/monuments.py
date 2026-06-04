@@ -1,4 +1,4 @@
-"""Monumentos e marcos de Lisboa."""
+"""Lisbon monuments and landmarks."""
 
 MONUMENTS = [
     "Torre de Belém",
@@ -125,8 +125,8 @@ WIKIPEDIA = {
     "Cordoaria Nacional": "Cordoaria Nacional",
 }
 
-# Freguesia (parish) where each monument is located
-FREGUESIAS = {
+# Parish (freguesia) where each monument is located
+PARISHES = {
     "Torre de Belém": "Belém",
     "Mosteiro dos Jerónimos": "Belém",
     "Castelo de São Jorge": "Santa Maria Maior",

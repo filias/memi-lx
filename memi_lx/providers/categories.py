@@ -8,13 +8,13 @@ from memi_lx.categories.metro import (
     COMMONS_FILES as METRO_FILES,
     LINES as METRO_LINES,
 )
-from memi_lx.categories.monumentos import (
+from memi_lx.categories.monuments import (
     MONUMENTS,
     WIKIPEDIA as MONUMENT_WIKI,
-    FREGUESIAS as MONUMENT_FREGUESIAS,
+    PARISHES as MONUMENT_PARISHES,
 )
-from memi_lx.categories.freguesias import FREGUESIAS, MAPS as FREGUESIA_MAPS
-from memi_lx.categories.atracoes import ATRACOES, WIKIPEDIA as ATRACAO_WIKI
+from memi_lx.categories.parishes import PARISHES, MAPS as PARISH_MAPS
+from memi_lx.categories.attractions import ATTRACTIONS, WIKIPEDIA as ATTRACTION_WIKI
 
 
 class MetroProvider(CategoryProvider):
@@ -43,32 +43,32 @@ class MonumentsProvider(CategoryProvider):
         return images.get_wikipedia_image(wiki)
 
     def get_tag(self, item):
-        return MONUMENT_FREGUESIAS.get(item)
+        return MONUMENT_PARISHES.get(item)
 
 
-class FreguesiasProvider(CategoryProvider):
+class ParishesProvider(CategoryProvider):
     key = "geografia:freguesias"
-    items = FREGUESIAS
+    items = PARISHES
     override_name = True
 
     def get_image(self, item):
-        url = FREGUESIA_MAPS.get(item)
+        url = PARISH_MAPS.get(item)
         if url:
             return {"name": item, "image": url}
         return None
 
 
-class AtracoesProvider(CategoryProvider):
+class AttractionsProvider(CategoryProvider):
     key = "geografia:atracoes"
-    items = ATRACOES
+    items = ATTRACTIONS
     override_name = True
 
     def get_image(self, item):
-        wiki = ATRACAO_WIKI.get(item, item)
+        wiki = ATTRACTION_WIKI.get(item, item)
         return images.get_wikipedia_image(wiki)
 
 
 register(MetroProvider())
 register(MonumentsProvider())
-register(FreguesiasProvider())
-register(AtracoesProvider())
+register(ParishesProvider())
+register(AttractionsProvider())

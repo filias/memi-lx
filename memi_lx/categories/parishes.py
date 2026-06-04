@@ -1,6 +1,6 @@
-"""Freguesias (civil parishes) of Lisbon — the 24 parishes after the 2012 reform."""
+"""Civil parishes (freguesias) of Lisbon — the 24 parishes after the 2012 reform."""
 
-FREGUESIAS = [
+PARISHES = [
     "Ajuda",
     "Alcântara",
     "Alvalade",
