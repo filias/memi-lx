@@ -37,6 +37,9 @@ class MonumentsProvider(CategoryProvider):
     key = "cultura:monumentos"
     items = MONUMENTS
     override_name = True
+    # Parish tags are place names, not scientific names — render them plain so
+    # single-word parishes (Alvalade, Ajuda…) don't get auto-styled as binomials.
+    tag_style = "plain"
 
     def get_image(self, item):
         wiki = MONUMENT_WIKI.get(item, item)
