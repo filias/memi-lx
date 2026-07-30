@@ -8,6 +8,7 @@ from memi_engine import MemiConfig, create_app
 import memi_lx.providers  # noqa: F401
 
 config = MemiConfig(
+    default_category="cultura:monumentos",
     analytics_html=(
         '<script data-goatcounter="https://memi-lx.goatcounter.com/count"'
         ' async src="//gc.zgo.at/count.js"></script>'
