@@ -19,10 +19,10 @@ config = MemiConfig(
     sponsor_url="https://github.com/sponsors/filias",
     sponsor_text="apoiar",
     related_sites=[
-        {"name": "memi", "url": "https://memi.click"},
-        {"name": "memi portugal", "url": "https://pt.memi.click"},
-        {"name": "memi slovensko", "url": "https://sk.memi.click"},
-        {"name": "memi US", "url": "https://us.memi.click"},
+        {"name": "memi", "url": "https://world.memi.games"},
+        {"name": "memi portugal", "url": "https://pt.memi.games"},
+        {"name": "memi slovensko", "url": "https://sk.memi.games"},
+        {"name": "memi united states", "url": "https://us.memi.games"},
     ],
     label_related_sites="outros jogos memi",
     about_html="""
