@@ -13,6 +13,9 @@ config = MemiConfig(
         '<script data-goatcounter="https://memi-lx.goatcounter.com/count"'
         ' async src="//gc.zgo.at/count.js"></script>'
     ),
+    # What the page tells Google and screen readers it is: this game
+    # is Portuguese, not the engine's default English.
+    html_lang="pt",
     title="memi lisboa",
     subtitle="pratica a tua memória",
     favicon_color="#EE1C25",
