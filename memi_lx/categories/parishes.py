@@ -55,3 +55,31 @@ MAPS = {
     "São Domingos de Benfica": "/static/freguesias/saodomingosdebenfica.png",
     "São Vicente": "/static/freguesias/saovicente.png",
 }
+
+# Portuguese Wikipedia article for each parish (the details panel).
+WIKIPEDIA = {
+    "Ajuda": "Ajuda (Lisboa)",
+    "Alcântara": "Alcântara (Lisboa)",
+    "Alvalade": "Alvalade (Lisboa)",
+    "Areeiro": "Areeiro (Lisboa)",
+    "Arroios": "Arroios (Lisboa)",
+    "Avenidas Novas": "Avenidas Novas",
+    "Beato": "Beato (Lisboa)",
+    "Belém": "Belém (Lisboa)",
+    "Benfica": "Benfica (Lisboa)",
+    "Campo de Ourique": "Campo de Ourique",
+    "Campolide": "Campolide",
+    "Carnide": "Carnide (Lisboa)",
+    "Estrela": "Estrela (Lisboa)",
+    "Lumiar": "Lumiar",
+    "Marvila": "Marvila (Lisboa)",
+    "Misericórdia": "Misericórdia (Lisboa)",
+    "Olivais": "Olivais (Lisboa)",
+    "Parque das Nações": "Parque das Nações",
+    "Penha de França": "Penha de França (Lisboa)",
+    "Santa Clara": "Santa Clara (Lisboa)",
+    "Santa Maria Maior": "Santa Maria Maior (Lisboa)",
+    "Santo António": "Santo António (Lisboa)",
+    "São Domingos de Benfica": "São Domingos de Benfica",
+    "São Vicente": "São Vicente (Lisboa)",
+}

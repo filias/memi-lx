@@ -16,6 +16,9 @@ config = MemiConfig(
     # What the page tells Google and screen readers it is: this game
     # is Portuguese, not the engine's default English.
     html_lang="pt",
+    # Details panel beside the card on reveal: the Wikipedia intro (in
+    # Portuguese where it exists) and a map.
+    layout="enriched",
     title="memi lisboa",
     subtitle="pratica a tua memória",
     favicon_color="#EE1C25",
@@ -93,6 +96,8 @@ config = MemiConfig(
     label_back="voltar a jogar",
     label_more="saber mais",
     label_all="todos",
+    label_open_map="abrir mapa",
+    label_listen="ouvir",
 )
 
 instance_static = os.path.join(os.path.dirname(__file__), "..", "static")
