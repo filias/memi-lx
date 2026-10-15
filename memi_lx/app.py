@@ -92,6 +92,7 @@ config = MemiConfig(
     label_click_for_new="clica novamente para outra",
     label_back="voltar a jogar",
     label_more="saber mais",
+    label_all="todos",
 )
 
 instance_static = os.path.join(os.path.dirname(__file__), "..", "static")
