@@ -15,7 +15,7 @@ import memi_lx.providers  # noqa: F401
 HOME_CARD_HTML = """
 <style>
     #status.home { width: 100%; text-align: center; }
-    #status .home-map { display: block; max-width: 80%; max-height: calc(min(500px, 90vw) * 0.6); margin: 0 auto 1.5rem; }
+    #status .home-map, #done-art .home-map { display: block; max-width: 80%; max-height: calc(min(500px, 90vw) * 0.6); margin: 0 auto 1.5rem; }
 </style>
 <script>
 (function () {
@@ -79,6 +79,8 @@ config = MemiConfig(
         '<script data-goatcounter="https://memi-lx.goatcounter.com/count"'
         ' async src="//gc.zgo.at/count.js"></script>'
     ) + HOME_CARD_HTML,
+    # The "all done" card shows the same flag map as the home card.
+    done_html='<img class="home-map" src="/static/flag-map-lisboa.svg" alt="Lisboa">',
     # What the page tells Google and screen readers it is: this game
     # is Portuguese, not the engine's default English.
     html_lang="pt",
