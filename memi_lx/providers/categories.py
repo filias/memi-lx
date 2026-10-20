@@ -4,12 +4,14 @@ from memi_engine import CategoryProvider, register
 from memi_engine import images
 
 from memi_lx.categories.metro import (
+    EN as METRO_EN,
     STATIONS,
     COMMONS_FILES as METRO_FILES,
     LINES as METRO_LINES,
     WIKIPEDIA as METRO_WIKI,
 )
 from memi_lx.categories.monuments import (
+    EN as MONUMENT_EN,
     MONUMENTS,
     WIKIPEDIA as MONUMENT_WIKI,
     PARISHES as MONUMENT_PARISHES,
@@ -19,7 +21,11 @@ from memi_lx.categories.parishes import (
     MAPS as PARISH_MAPS,
     WIKIPEDIA as PARISH_WIKI,
 )
-from memi_lx.categories.attractions import ATTRACTIONS, WIKIPEDIA as ATTRACTION_WIKI
+from memi_lx.categories.attractions import (
+    ATTRACTIONS,
+    EN as ATTRACTION_EN,
+    WIKIPEDIA as ATTRACTION_WIKI,
+)
 
 # Greater Lisbon. Wikidata coordinates outside it belong to something other
 # than the place on the card, so they get no map.
@@ -30,6 +36,7 @@ class MetroProvider(CategoryProvider):
     key = "cultura:metro"
     items = STATIONS
     override_name = True
+    translations = {"en": METRO_EN}
     map_zoom = 16
     map_bounds = LISBON_BOUNDS
 
@@ -53,6 +60,7 @@ class MonumentsProvider(CategoryProvider):
     key = "cultura:monumentos"
     items = MONUMENTS
     override_name = True
+    translations = {"en": MONUMENT_EN}
     map_zoom = 16
     map_bounds = LISBON_BOUNDS
     # Parish tags are place names, not scientific names — render them plain so
@@ -90,6 +98,7 @@ class AttractionsProvider(CategoryProvider):
     key = "geografia:atracoes"
     items = ATTRACTIONS
     override_name = True
+    translations = {"en": ATTRACTION_EN}
     map_zoom = 16
     map_bounds = LISBON_BOUNDS
 

@@ -38,3 +38,16 @@ WIKIPEDIA = {
     "Fundação Calouste Gulbenkian": "Calouste Gulbenkian Museum",
     "Museu da Carris": "Carris Museum",
 }
+
+# English names, for the game in English (/en/). Neighbourhoods, streets and
+# squares English keeps in Portuguese (Alfama, Rossio, Avenida da
+# Liberdade…) stay as they are.
+EN = {
+    "Marquês de Pombal": "Marquis of Pombal Square",
+    "Monsanto": "Monsanto Forest Park",
+    "Torre Vasco da Gama": "Vasco da Gama Tower",
+    "Fundação Calouste Gulbenkian": "Calouste Gulbenkian Foundation",
+    "Casa Fernando Pessoa": "Fernando Pessoa House",
+    "Casa-Museu Dr. Anastácio Gonçalves": "Anastácio Gonçalves House-Museum",
+    "Museu da Carris": "Carris Museum",
+}

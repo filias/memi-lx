@@ -177,3 +177,17 @@ WIKIPEDIA = {
     "Roma": "Estação Roma",
     "Areeiro": "Estação Areeiro",
 }
+
+# English for the game in English (/en/). Station names are proper names and
+# stay; the line tags ("Linha Azul / Verde") are translated.
+_LINE_COLOURS = {
+    "Azul": "Blue",
+    "Amarela": "Yellow",
+    "Verde": "Green",
+    "Vermelha": "Red",
+}
+EN = {
+    f"Linha {line}": " / ".join(_LINE_COLOURS[c] for c in line.split(" / "))
+    + (" Lines" if " / " in line else " Line")
+    for line in set(LINES.values())
+}
