@@ -162,6 +162,7 @@ config = MemiConfig(
     label_back="voltar a jogar",
     label_more="saber mais",
     label_all="todos",
+    label_contents="o que há nesta categoria",
     label_open_map="abrir mapa",
     label_listen="ouvir",
     # The game in English, at /en/. Answers and tags come from each provider's
@@ -187,6 +188,7 @@ config = MemiConfig(
             "label_back": "back to playing",
             "label_more": "know more",
             "label_all": "all",
+            "label_contents": "what's in this category",
             "label_open_map": "open map",
             "label_listen": "listen",
             "category_labels": {
